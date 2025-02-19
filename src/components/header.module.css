@@ -1,8 +1,18 @@
+/* header.module.css */
 .header {
   background-color: goldenrod;
   text-align: center;
-  padding: 10px;
-  font-size: 5rem;
+  padding: 8px 0;
+  font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 600;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.219);
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 5px 0;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+  }
 }
